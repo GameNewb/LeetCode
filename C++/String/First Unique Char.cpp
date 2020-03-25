@@ -20,30 +20,18 @@ Note: You may assume the string contain only lowercase letters.
 #include <algorithm>
 using namespace std;
 
-
 int firstUniqChar(string s) {
     unordered_map<char,int> strmap;
-    const int length = s.length();
+    int length = s.size();
 
     if (length != 0) {
-        // String to array to iterate over
-        //char* char_array = new char[length + 1];
-       // strcpy(char_array, s.c_str());
-
-        // O(n)
-        for (int i = 0; i < length; i++) {
-            
-            // Store in a hashmap
-            if(strmap.count(s[i])) {
-                strmap[s[i]]++;
-            } else {
-                strmap[s[i]] = 1;
-            }
+        // Store in a hashmap
+        for (auto i: s) {
+            strmap[i]++;
         }
 
         // Best case O(1), worst case O(n)
         for (int i = 0; i < length; i++) {
-            
             if(strmap[s[i]] == 1) {
                 return i;
             }
@@ -72,7 +60,7 @@ int firstUniqCharCleaner(string s) {
 
         }
     }
-    
+
     return index == s.size() ? -1 : index;
 }
 
