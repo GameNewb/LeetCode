@@ -41,6 +41,10 @@
         "string": "cpp",
         "unordered_map": "cpp",
         "map": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "algorithm": "cpp",
+        "list": "cpp",
+        "xtree": "cpp",
+        "regex": "cpp"
     }
 }
