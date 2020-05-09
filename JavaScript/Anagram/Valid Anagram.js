@@ -31,7 +31,6 @@ function isAnagramSlow(s, t) {
 }
 
 function isAnagram(s, t) {
-
     // Must be same length to be anagram
     if(s.length != t.length) return false;
 
