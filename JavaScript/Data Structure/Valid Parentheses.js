@@ -15,9 +15,10 @@ Output: true
 */
 
 function isValid(s) {
-    // If s is empty or it's not even length
-    // We know that each parentheses has a corresponding pair, so it will always be even length
-    if (!s || s.length % 2 != 0) return false;
+    if (!s) return true;
+
+    // We know that each parentheses has a corresponding pair, so it will always be even length, return false if it's not
+    if (s.length % 2 != 0) return false;
 
     let map = [];
     map[")"] = "(";
