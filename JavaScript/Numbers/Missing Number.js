@@ -43,3 +43,4 @@ var input = [9,6,4,2,3,5,7,0,1];
 var input2 = [3,0,1];
 console.log(missingNumber(input));
 console.log(missingNumber(input2));
+console.log(missingNumber([7,8,9,11,12]));
